@@ -17,8 +17,8 @@ const books = [
     { name: "Java Programming", author: "Gosling", status: "Available", img: "JAVA.jpg" }
 ];
 
-/* LOGIN */
-function login() {
+/* INDEX (LOGIN) */
+function index() {
     const email = userId.value;
     const pass = password.value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -36,10 +36,10 @@ function login() {
     window.location.href = "library.html";
 }
 
-/* ENTER KEY LOGIN */
+/* ENTER KEY INDEX */
 document.addEventListener("keydown", e => {
     if (e.key === "Enter" && document.getElementById("loginError")) {
-        login();
+        index();
     }
 });
 
@@ -63,8 +63,9 @@ function loadBooks(list) {
         </div>
     `).join("");
 
-    attachBookClickEvents(); // 🔥 IMPORTANT
+    attachBookClickEvents();
 }
+
 function attachBookClickEvents() {
     const cards = document.querySelectorAll(".book-card");
 
@@ -78,9 +79,6 @@ function attachBookClickEvents() {
         });
     });
 }
-
-
-
 
 function showAvailable() {
     loadBooks(books);
@@ -141,16 +139,19 @@ function logout() {
     window.location.href = "index.html";
 }
 
+/* MODAL */
 function openModal(title, author, image) {
-  document.getElementById("modalBookTitle").innerText = title;
-  document.getElementById("modalBookAuthor").innerText = "Author: " + author;
-  document.getElementById("modalBookImage").src = image;
-  document.getElementById("bookModal").style.display = "block";
+    document.getElementById("modalBookTitle").innerText = title;
+    document.getElementById("modalBookAuthor").innerText = "Author: " + author;
+    document.getElementById("modalBookImage").src = image;
+    document.getElementById("bookModal").style.display = "block";
 }
 
 function closeModal() {
-  document.getElementById("bookModal").style.display = "none";
+    document.getElementById("bookModal").style.display = "none";
 }
+
+/* PASSWORD TOGGLE */
 function togglePassword() {
     const password = document.getElementById("password");
     const eyeIcon = document.getElementById("eyeIcon");
@@ -176,5 +177,3 @@ function toggleEyeIcon() {
         eyeIcon.textContent = "👁️";
     }
 }
-
-
