@@ -3,18 +3,18 @@ let requestedBooks = [];
 let isDark = true;
 
 const books = [
-    { name: "Python Programming", author: "Guido", status: "Available", img: "images/python.jpg" },
-    { name: "Data Structures", author: "Weiss", status: "Available", img: "images/ds.jpg" },
-    { name: "DBMS", author: "Ramakrishnan", status: "Available", img: "images/dbms.png" },
-    { name: "AI", author: "Russell", status: "Available", img: "images/ai.jpg" },
-    { name: "ML", author: "Mitchell", status: "Available", img: "images/ML.jpg" },
-    { name: "DL", author: "Goodfellow", status: "Available", img: "images/DL.jpg" },
-    { name: "NLP", author: "Jurafsky", status: "Available", img: "images/NLP.jpg" },
-    { name: "MERN Stack", author: "Ullman", status: "Available", img: "images/MERN.jpg" },
-    { name: "Cloud Computing", author: "Buyya", status: "Available", img: "images/CLOUDCOMPUTING.jpg" },
-    { name: "Operating Systems", author: "Silberschatz", status: "Available", img: "images/OS.jpg" },
-    { name: "C Programming", author: "Kernighan", status: "Available", img: "images/C.jpg" },
-    { name: "Java Programming", author: "Gosling", status: "Available", img: "images/JAVA.jpg" }
+    { name: "Python Programming", author: "Guido", status: "Available", img: "python.jpg" },
+    { name: "Data Structures", author: "Weiss", status: "Available", img: "ds.jpg" },
+    { name: "DBMS", author: "Ramakrishnan", status: "Available", img: "dbms.png" },
+    { name: "AI", author: "Russell", status: "Available", img: "ai.jpg" },
+    { name: "ML", author: "Mitchell", status: "Available", img: "ML.jpg" },
+    { name: "DL", author: "Goodfellow", status: "Available", img: "DL.jpg" },
+    { name: "NLP", author: "Jurafsky", status: "Available", img: "NLP.jpg" },
+    { name: "MERN Stack", author: "Ullman", status: "Available", img: "MERN.jpg" },
+    { name: "Cloud Computing", author: "Buyya", status: "Available", img: "CLOUDCOMPUTING.jpg" },
+    { name: "Operating Systems", author: "Silberschatz", status: "Available", img: "OS.jpg" },
+    { name: "C Programming", author: "Kernighan", status: "Available", img: "C.jpg" },
+    { name: "Java Programming", author: "Gosling", status: "Available", img: "JAVA.jpg" }
 ];
 
 /* LOGIN */
@@ -176,3 +176,4 @@ function toggleEyeIcon() {
         eyeIcon.textContent = "👁️";
     }
 }
+
